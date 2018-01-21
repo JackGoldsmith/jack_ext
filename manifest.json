@@ -1,11 +1,12 @@
 {
-    "name": "Hello Extensions",
-    "description" : "Base Level Extension",
+    "name": "Jack's color changer",
+    "description" : "Changes color of background on a page",
     "version": "1.0",
     "manifest_version": 2,
     "browser_action": {
-      "default_popup": "hello.html",
-      "default_icon": "hello_extensions.png"
+      "default_popup": "popup.html",
+      "default_icon": "hello_extensions.png",
+      "default_title": "Please click"
     },
     "commands": {
       "_execute_browser_action": {
@@ -15,6 +16,10 @@
         },
         "description": "Opens hello.html"
       }
-    }
+    },
+  	"permissions": [
+    	"activeTab",
+    	"storage"
+  	]
   
 }
